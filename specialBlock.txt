@@ -1,0 +1,3 @@
+    var circle = svg.selectAll("circle")
+    	.data(...)
+      .enter().append("circle")
