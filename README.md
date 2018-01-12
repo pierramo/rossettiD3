@@ -16,3 +16,5 @@ Remove (Intro to Methods)
 D3 API = https://github.com/d3/d3/blob/master/API.md
 
 Javascript DOM Element Methods = https://www.w3schools.com/jsref/dom_obj_all.asp
+
+Javascript Math Methods = https://www.w3schools.com/jsref/jsref_obj_math.asp
