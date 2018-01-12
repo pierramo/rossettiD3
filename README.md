@@ -6,4 +6,5 @@ This is an introduction to opensource data.
 Important Links are below:
 
 ACT 1: DOM Manipulation
-SVG Attributes https://www.w3schools.com/graphics/svg_reference.asp
+
+SVG Attributes = https://www.w3schools.com/graphics/svg_reference.asp
