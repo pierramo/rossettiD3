@@ -1,0 +1,2 @@
+   var item = d3.select("circle:nth-child(3)").datum()   
+   console.log(item)
