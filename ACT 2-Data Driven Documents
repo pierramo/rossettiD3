@@ -1,0 +1,37 @@
+    var width=900, height=500
+    
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+   
+    var data=[50,45,105,69,80,55,200]
+    var circle=svg.selectAll("circle")
+   				.data(data)
+          .enter().append("circle")
+    
+		 circle
+    	.attr("cx",function(d) {
+       return d *2
+     })
+    	.attr("cy", 200)
+    	.attr("r", 40)
+    	.attr("fill", function(d) {
+       if (d<60)
+    			return "green"
+       else
+          return "Red"
+     })
+     	.attr("fill-opacity", 0.22)
+     
+     
+     
+//animated moving random by width
+//     circle
+//     .transition()
+//     .attr("cx",function(){
+//          return Math.random() * width
+//          })  
+//     .attr("cy", function(){
+//            return Math.random()* height
+//          })
+    
