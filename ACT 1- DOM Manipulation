@@ -1,38 +1,47 @@
- var width=700, height= 500
+# D3-Tests
+///CANVAS SET-UP
+var width= 1920 //pixel canvas
+var height= 1080
     
-    var svg = d3.select("body").append("svg")
-      .attr("width", width)
-      .attr("height", height)
+var svg = d3.select("body") .append("svg")
+  .attr("width", width)
+  .attr("height", height)
     
-    // Draw circle and learn to set parameters and functions that can start being applied to parameters
+ ///DRAWING SVG OBJECTS AND GIVING THEM ATTRIBUTES
+ var circle=svg.append ("circle")
+ circle 
+    	.attr("cx", 230)          	//Where will it be located
+	.attr("cy", 200) 		//giving it coordinates
+    	.attr("r", 25) 		        //size
+    	.attr("fill","green") 		//fill color
+    	.attr("fill-opacity", 0.26)	//fill opacity
+    	.attr("stroke", "black")	//stroke
+    	.attr("stroke-width",5)	   	//Line weight	
     
-    var circle=svg.append("circle")
-     circle
-    	.attr("cx", 200)
-    	.attr("cy", 200)
-    	.attr("r", 25)
-    	.attr("fill", "steelblue")
-    
-    
-    var square=svg.append("rect")
-    
+    var square=svg.append("rect") 
     square
-    	.attr("x",100)
-    	.attr("y",100)
-    	.attr("rx", 5)
-    	.attr("ry", 5)
-    	.attr("width",25)
-    	.attr("length",25)
-    	.attr("fill","steelblue")
-    	.attr("stroke", "white")
+    	.attr("x", 286)
+    	.attr("y", 365)
+    	.attr("width", 25)
+    	.attr("height", 25)
+     	.attr("fill","steelblue") 		//fill color
+    	.attr("fill-opacity", 0.26)		//fill opacity
+    	.attr("stroke", "black")	 	//stroke
+    	.attr("stroke-width",5)			//Line weight
     
-    var line=svg.append("line")
     
-    line
-    	.attr("x1", 300)
-    	.attr("y1", 300)
-    	.attr("x2", 500)
-    	.attr("y2", 500)
+    
+ 
+//     	    //SVG Shapes 	
+//          https://www.w3schools.com/tags/ref_attributes.asp
+// 			Ellipse <ellipse>
+// 			Line <line>
+// 			Polyline <polyline>
+// 			Polygon <polygon>
+// 			Path <path>
+//	    //SVG Colors https://www.w3schools.com/tags/ref_colornames.asp
+    	
+    	
     
     var circle2=svg.append("circle")
     
@@ -44,18 +53,20 @@
     	.attr("fill-opacity", 0.2)
     	.attr("stroke", "white")
     
-//    circle2.remove()
+////TO REMOVE SELECT+ CNTRL+/
+//     var circle2=svg.append("circle")
     
-    circle
+//  	 	circle2
+//     	.attr("cx",200)
+//     	.attr("cy",300)
+//     	.attr("r", 20)
+//     	.attr("fill","steelblue")
+//     	.attr("fill-opacity", 0.2)
+//     	.attr("stroke", "white")
+    
+    circle1
     .transition()
-    .attr("cx",function(){
-         return Math.random() * width
-    })     
-
-//     svg.append("text")
-//       .text("Edit the code below to change me!")
-//       .attr("y", 200)
-//       .attr("x", 120)
-//       .attr("font-size", 36)
-//       .attr("font-family", "monospace")
-    
+//     .attr("cx", 400)
+       .attr("cx", function (){
+        return Math.random()* width
+        })
